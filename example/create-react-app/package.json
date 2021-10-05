@@ -39,6 +39,6 @@
   },
   "devDependencies": {
     "@craco/craco": "^6.2.0",
-    "craco-cesium": "^1.2.0"
+    "craco-cesium": "1.2.0"
   }
 }
