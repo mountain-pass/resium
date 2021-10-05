@@ -1,0 +1,10 @@
+import { PostProcessStageComposite as CesiumPostProcessStageComposite } from "cesium";
+import { PickCesiumProps, ConstructorOptions, Merge } from "../core";
+declare type Target = Merge<CesiumPostProcessStageComposite, ConstructorOptions<typeof CesiumPostProcessStageComposite>>;
+export declare type PostProcessStageCompositeCesiumProps = PickCesiumProps<CesiumPostProcessStageComposite, typeof cesiumProps>;
+export declare type PostProcessStageCompositeCesiumReadonlyProps = PickCesiumProps<Target, typeof cesiumReadonlyProps, "stages">;
+export declare type PostProcessStageCompositeProps = PostProcessStageCompositeCesiumProps & PostProcessStageCompositeCesiumReadonlyProps;
+declare const cesiumProps: readonly ["enabled", "selected"];
+declare const cesiumReadonlyProps: readonly ["inputPreviousStageTexture", "name", "stages", "uniforms"];
+export declare const PostProcessStageComposite: import("../core").CesiumComponentType<CesiumPostProcessStageComposite, PostProcessStageCompositeProps>;
+export default PostProcessStageComposite;
